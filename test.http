@@ -1,0 +1,26 @@
+### READ ALL ITEMS
+GET http://localhost/items
+
+### READ A SPECIFIC ITEM
+GET http://localhost/item/1
+
+### CREATE AN ITEM
+POST http://localhost/items
+Content-Type: application/json
+
+{
+    "title": "Titulo2",
+    "content": "Contenido2"
+}
+
+### UPDATE AN ITEM
+PUT http://localhost/items/1
+Content-Type: application/json
+
+{
+    "title": "Titulo mod",
+    "content": "Contenido mod"
+}
+
+### DELETE AN ITEM
+DELETE http://localhost/items/2
